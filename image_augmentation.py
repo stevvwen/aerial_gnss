@@ -48,8 +48,8 @@ if not os.path.exists(output_dir):
     os.mkdir(image_dir)
     os.mkdir(label_dir)
 
-source_image_dir= "datasets/multiaqua_data/train/images"
-source_label_dir= "datasets/multiaqua_data/train/labels"
+source_image_dir= ...
+source_label_dir= ...
 
 # Get all image files in the source directory and the corresponding label files
 image_files= os.listdir(source_image_dir)
@@ -109,8 +109,6 @@ for image_file, label_file in tqdm(zip(image_files, label_files)):
         # Apply augmentation to the image
         augmented_image, augmented_boxes= augment(image=image, bounding_boxes=boxes)
 
-
-        #augmented_image = augmented_boxes.draw_on_image(augmented_image, size=2, color=[0, 0, 255])
 
         # Write the augmented image to the output directory
         cv2.imwrite(f"{image_dir}/{image_file}_{i}.jpg", augmented_image)

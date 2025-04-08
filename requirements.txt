@@ -1,0 +1,10 @@
+# Note numpy== 1.26.0
+# Note scikit-image==0.18.3
+imgaug==0.4.0
+numpy==1.26.0
+opencv_python==4.11.0.86
+Pillow==11.1.0
+pydantic==2.11.3
+Requests==2.32.3
+tqdm==4.67.1
+ultralytics==8.3.90
